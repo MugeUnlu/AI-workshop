@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter";
+
+    /* Wise palette, sampled from the reference */
+    --background: 0 0% 100%;           /* #FFFFFF */
+    --foreground: 80 11% 5%;           /* #0E0F0C content primary */
+    --muted: 60 10% 90%;               /* #E8E8E3 */
+    --muted-foreground: 120 1% 27%;    /* #454745 content secondary */
+    --primary: 97 72% 67%;             /* #9FE870 bright green */
+    --primary-foreground: 94 100% 10%; /* #163300 forest green */
+    --secondary: 60 10% 90%;
+    --secondary-foreground: 80 11% 5%;
+    --accent: 96 70% 87%;              /* #D9F5C6 light green pill */
+    --accent-foreground: 94 100% 10%;  /* #163300 */
+    --card: 60 10% 90%;                /* #E8E8E3 account card */
+    --card-foreground: 80 11% 5%;
+    --border: 60 6% 86%;
+    --input: 60 6% 86%;
+    --ring: 94 100% 10%;
+    --radius: 0.5rem;
+  }
+}
