@@ -15,6 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         pill: "rounded-full bg-accent font-semibold text-accent-foreground hover:bg-accent/80",
+        cta: "rounded-full bg-primary font-semibold text-primary-foreground hover:bg-primary/90",
       },
       size: {
         ...sizeVariant("height", "px", "gap", "text"),

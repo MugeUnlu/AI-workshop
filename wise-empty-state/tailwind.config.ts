@@ -29,6 +29,10 @@ export default {
         card: "1rem",
       },
       width: { card: "220px" },
+      spacing: { 18: "4.5rem", 22: "5.5rem" },
+      // Motion tokens: drawers enter slower than they exit, steps move quicker than surfaces
+      transitionDuration: { enter: "320ms", exit: "220ms", step: "240ms" },
+      transitionTimingFunction: { drawer: "cubic-bezier(0.32, 0.72, 0, 1)" },
       height: { card: "13rem" },
       fontSize: { display: ["2rem", { lineHeight: "2.5rem", letterSpacing: "-0.01em" }] },
       boxShadow: { card: "0 1px 2px 0 rgb(14 15 12 / 0.04), 0 1px 3px 0 rgb(14 15 12 / 0.06)" },

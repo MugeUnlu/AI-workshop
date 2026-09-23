@@ -13,13 +13,14 @@ const DEFAULT_ACTIONS = [
 
 export interface ActionBarProps extends React.HTMLAttributes<HTMLDivElement> {
   actions?: readonly string[];
+  onActionClick?: (action: string) => void;
 }
 
 const ActionBar = React.forwardRef<HTMLDivElement, ActionBarProps>(
-  ({ className, actions = DEFAULT_ACTIONS, ...props }, ref) => (
+  ({ className, actions = DEFAULT_ACTIONS, onActionClick, ...props }, ref) => (
     <div ref={ref} className={cn("flex flex-wrap items-center gap-2.5", className)} {...props}>
       {actions.map((label) => (
-        <Button key={label} variant="pill" size="pill">
+        <Button key={label} variant="pill" size="pill" onClick={() => onActionClick?.(label)}>
           {label}
         </Button>
       ))}
